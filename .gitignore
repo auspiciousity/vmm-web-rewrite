@@ -1,0 +1,6 @@
+# modules
+node_modules
+
+# build objects
+.parcel-cache
+dist

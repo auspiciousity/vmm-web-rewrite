@@ -1,0 +1,85 @@
+@import url("./patterns.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-grid {
+    @apply lg:grid lg:min-h-screen lg:grid-cols-12;
+}
+
+.main-grid>aside {
+    @apply relative h-16 lg:h-full hidden lg:block;
+    @apply lg:order-last lg:col-span-4 xl:col-span-5;
+}
+
+.main-grid>aside>img {
+    @apply absolute inset-0 h-full w-full;
+    @apply object-cover shadow-xl;
+    @apply shadow-cyan-500/25 hover:shadow-cyan-500;
+    @apply transition duration-500 ease-in-out;
+}
+
+.heading-primary {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+    @apply font-bold text-sky-400;
+    @apply border-b-2 border-gray-400;
+}
+
+.heading-2-primary {
+    @apply text-lg sm:text-xl md:text-2xl;
+    @apply font-semibold text-sky-300;
+}
+
+.form-box {
+    @apply px-8 py-8 sm:px-12 lg:px-16 lg:py-12;
+    @apply lg:col-span-8 xl:col-span-7;
+    @apply flex items-center justify-center;
+}
+
+.form-main {
+    @apply p-4 mt-6 shadow-lg shadow-cyan-500/10;
+    @apply bg-zinc-700 rounded-md;
+}
+
+.form-input {
+    @apply text-sm text-gray-200 placeholder-gray-400;
+    @apply mt-1 w-full rounded-md shadow-sm;
+    @apply border-cyan-500 focus:border-cyan-600;
+    @apply bg-transparent focus:bg-gray-700/10;
+    @apply transition duration-100 ease-in-out;
+}
+
+.form-input[invalid] {
+    @apply border-red-500 focus:border-cyan-600;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-200;
+    @apply flex flex-row items-center gap-1;
+}
+
+/*
+these classes don't have too many classes, so i would do them inline,
+except they are used with js in the client, so we want them included in the build.
+*/
+.form-helper-text {
+    @apply text-xs text-gray-400 mt-1;
+}
+
+.form-helper-text.danger {
+    @apply text-red-500;
+}
+
+.form-helper-text.master {
+    @apply mt-0 mb-1;
+}
+
+.form-button-tertiary {
+    @apply inline-block shrink-0 rounded-md px-12 py-3;
+    @apply bg-transparent hover:bg-zinc-800;
+    @apply border-2 border-cyan-500/50 hover:border-transparent;
+    @apply text-sm font-medium text-white hover:text-gray-300;
+    /* longer transition here */
+    @apply transition duration-200 ease-in-out;
+}

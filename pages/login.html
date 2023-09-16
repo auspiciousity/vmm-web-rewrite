@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-zinc-800">
+    <section>
+        <div class="main-grid pattern-puzzle h-screen">
+            <aside>
+                <img alt="Pattern" src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73" />
+            </aside>
+
+            <main class="form-box">
+                <div class="max-w-xl lg:max-w-3xl">
+                    <img class="block h-20 w-auto" src="assets/logo.png" />
+
+                    <div class="form-main">
+                        <h1 class="heading-primary pb-4">
+                            Virtual Medical Missions
+                        </h1>
+                        <h2 class="heading-2-primary mt-4">
+                            Register
+                        </h2>
+
+                        <p class="mt-4 leading-relaxed text-gray-200">
+                            Welcome to Virtual Medical Missions. To get started, please complete the form below
+                            with your information, and we&apos;ll create your account.
+                        </p>
+
+                        <form action="/add-something-here" class="mt-6 grid grid-cols-6 gap-6" id="signup-form">
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first-name" class="form-label">
+                                    First Name
+                                    <div class="text-red-500 font-bold text-lg">*</div>
+                                </label>
+
+                                <input type="text" id="first-name" name="first-name" class="form-input" />
+                                <p id="first-name-helper"></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="last-name" class="form-label">
+                                    Last Name
+                                    <div class="text-red-500 font-bold text-lg">*</div>
+                                </label>
+
+                                <input type="text" id="last-name" name="last-name" class="form-input" />
+                                <p id="last-name-helper"></p>
+                            </div>
+
+                            <div class="col-span-6">
+                                <label for="username" class="form-label">
+                                    User name
+                                </label>
+
+                                <input type="text" id="username" name="username" class="form-input" />
+                                <p id="username-helper"></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="gender" class="form-label">
+                                    Gender
+                                </label>
+
+                                <select name="gender" id="gender" class="form-input">
+                                    <option value="" disabled>Select a value...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer_not_to_say">Prefer not to say</option>
+                                </select>
+                                <p id="gender-helper"></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="birth-date" class="form-label">
+                                    Birth date
+                                </label>
+
+                                <input type="text" id="birth-date" name="birth-date" placeholder="MM/DD/YYYY"
+                                    maxlength="10" class="form-input" />
+                                <p id="birth-date-helper"></p>
+                            </div>
+
+                            <div class="col-span-6">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email" id="email" name="email" class="form-input" />
+                                <p id="email-helper"></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="password" class="form-label">
+                                    Password
+                                </label>
+
+                                <input type="password" id="password" name="password" class="form-input" />
+                                <p id="password-helper"></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="password-confirm" class="form-label">
+                                    Password Confirmation
+                                </label>
+
+                                <input type="password" id="password-confirm" name="password-confirm"
+                                    class="form-input" />
+                                <p id="password-confirm-helper"></p>
+                            </div>
+
+                            <!-- uncomment the following and update the hrefs, given valid t&c/privacy pages exist -->
+                            <!-- <div class="col-span-6">
+                                <p class="text-sm text-gray-200">
+                                    By creating an account, you agree to our
+                                    <a href="/link/to/t&c" class="text-gray-200 underline">
+                                        terms
+                                    </a>
+                                    and
+                                    <a href="/link/to/privacy" class="text-gray-200 underline">privacy policy</a>.
+                                </p>
+                            </div> -->
+
+                            <div class="col-span-6 sm:flex sm:items-center sm:gap-4 justify-between mt-2">
+                                <div class="flex flex-col">
+                                    <p id="main-helper"></p>
+                                    <button class="form-button-tertiary">
+                                        Create an account
+                                    </button>
+                                </div>
+
+                                <p class="mt-4 text-sm text-gray-400 sm:mt-0">
+                                    Have an account?
+                                    <a href="/pages/log-in" class="text-gray-200 underline">Log in</a>.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+
+
+<script src="./js/registerValidate.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
