@@ -5,8 +5,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "dev": "parcel ./pages/**/*.html",
-    "build-linux": "",
-    "build-windows": ""
+    "build": "tailwindcss -i ./pages/css/styles.css -o ./dist/dist.css"
   },
   "keywords": [],
   "author": "",
