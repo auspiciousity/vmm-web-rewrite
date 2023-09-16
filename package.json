@@ -2,10 +2,9 @@
   "name": "vmm-web-rewrite",
   "version": "1.0.0",
   "description": "",
-  "main": "postcss.config.js",
   "scripts": {
     "dev": "parcel ./pages/**/*.html",
-    "build": "tailwindcss -i ./pages/css/styles.css -o ./dist/dist.css"
+    "build": "parcel build --no-optimize ./pages/**/*.html"
   },
   "keywords": [],
   "author": "",
