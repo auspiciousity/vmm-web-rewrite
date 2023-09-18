@@ -42,7 +42,7 @@
                             with your information, and we&apos;ll create your account.
                         </p>
 
-                        <form action="/add-something-here" class="mt-6 grid grid-cols-6 gap-6" id="signup-form">
+                        <form action="/add-something-here" class="mt-6 grid grid-cols-6 gap-4" id="signup-form">
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="first-name" class="form-label">
                                     First Name
@@ -66,6 +66,7 @@
                             <div class="col-span-6">
                                 <label for="username" class="form-label">
                                     User name
+                                    <div class="text-red-500 font-bold text-lg">*</div>
                                 </label>
 
                                 <input type="text" id="username" name="username" class="form-input" />
@@ -75,6 +76,7 @@
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="gender" class="form-label">
                                     Gender
+                                    <div class="text-red-500 font-bold text-lg">*</div>
                                 </label>
 
                                 <select name="gender" id="gender" class="form-input">
@@ -90,6 +92,7 @@
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="birth-date" class="form-label">
                                     Birth date
+                                    <div class="text-red-500 font-bold text-lg">*</div>
                                 </label>
 
                                 <input type="text" id="birth-date" name="birth-date" placeholder="MM/DD/YYYY"
@@ -100,6 +103,7 @@
                             <div class="col-span-6">
                                 <label for="email" class="form-label">
                                     Email
+                                    <div class="text-red-500 font-bold text-lg">*</div>
                                 </label>
 
                                 <input type="email" id="email" name="email" class="form-input" />
@@ -109,6 +113,7 @@
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="password" class="form-label">
                                     Password
+                                    <div class="text-red-500 font-bold text-lg">*</div>
                                 </label>
 
                                 <input type="password" id="password" name="password" class="form-input" />
@@ -118,6 +123,7 @@
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="password-confirm" class="form-label">
                                     Password Confirmation
+                                    <div class="text-red-500 font-bold text-lg">*</div>
                                 </label>
 
                                 <input type="password" id="password-confirm" name="password-confirm"

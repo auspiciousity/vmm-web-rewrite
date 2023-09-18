@@ -22,13 +22,13 @@
 
 .heading-primary {
     @apply text-2xl sm:text-3xl md:text-4xl;
-    @apply font-bold text-sky-400;
+    @apply font-bold text-gray-100;
     @apply border-b-2 border-gray-400;
 }
 
 .heading-2-primary {
     @apply text-lg sm:text-xl md:text-2xl;
-    @apply font-semibold text-sky-300;
+    @apply font-semibold text-gray-300;
 }
 
 .form-box {
@@ -44,7 +44,7 @@
 
 .form-input {
     @apply text-sm text-gray-200 placeholder-gray-400;
-    @apply mt-1 w-full rounded-md shadow-sm;
+    @apply w-full rounded-md shadow-sm;
     @apply border-cyan-500 focus:border-cyan-600;
     @apply bg-transparent focus:bg-gray-700/10;
     @apply transition duration-100 ease-in-out;
