@@ -4,7 +4,7 @@ Rewrite of vmm web app using [tailwindcss](https://tailwindcss.com)
 # development
 
 ## in the cloud
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/[your GitHub username]/[your repository])
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/auspiciousity/vmm-web-rewrite)
 
 The easiest way to edit this project is to use [Gitpod](https://gitpod.io) -- it'll automatically set up the environment, download dependencies, expose ports, and start the app.
 
