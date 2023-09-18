@@ -1,0 +1,10 @@
+tasks:
+  - name: Dev server
+    init: npm i -D
+    command: npm run dev
+
+ports:
+  - name: Frontend
+    description: parcel dev server
+    port: 1234
+    onOpen: open-preview
