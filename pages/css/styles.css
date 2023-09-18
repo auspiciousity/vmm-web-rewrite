@@ -50,6 +50,10 @@
     @apply transition duration-100 ease-in-out;
 }
 
+.form-input>option {
+    @apply bg-zinc-700 text-gray-300;
+}
+
 .form-input[invalid] {
     @apply border-red-500 focus:border-cyan-600;
 }
