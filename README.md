@@ -1,6 +1,10 @@
 # vmm web rewrite
 Rewrite of vmm web app using [tailwindcss](https://tailwindcss.com)
 
+## Preview
+
+you can use pages.dev links in commits/PRs, or view it at https://vmm-rewrite.zbrasher.us/
+
 # development
 
 ## in the cloud
