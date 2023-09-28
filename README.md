@@ -21,3 +21,5 @@ Get node & npm, install dependencies (`npm i -D`), and then start a dev server (
 npm run build
 # distribution files will be in ./dist
 ```
+
+prebuilt files are present in [`./build`](build)
